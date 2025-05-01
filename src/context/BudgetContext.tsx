@@ -13,7 +13,8 @@ const [state,dispatch] = useReducer(budgetReducer,initialState)
     return(
         <BudgetContex.Provider
         value={{
-            state,dispatch
+            state,
+            dispatch
         }}>
             {children}
         </BudgetContex.Provider>
