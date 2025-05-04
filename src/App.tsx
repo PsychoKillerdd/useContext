@@ -3,6 +3,7 @@ import BudgetForm from "./components/BudgetForm"
 import { useBudget } from "./hooks/useBudget"
 import BudgetTracker from "./components/BudgetTracker"
 import ExpenseModal from './components/ExpensModal';
+import ExpenseList from "./components/ExpenseList";
 
 function App() {
   const {state} = useBudget()
@@ -18,8 +19,8 @@ return (
 
      {
       isValidDB && (
-        <main className="mmax-w-3xl mx-auto py-10">
-          
+        <main className="max-w-3xl mx-auto py-10">
+          <ExpenseList/>
           <ExpenseModal/>
         </main>
         
